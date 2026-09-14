@@ -38,7 +38,7 @@ export default function Navigation() {
           onClick={() => goTo('hero')}
           className="font-display text-lg text-plum"
         >
-          Krishika
+          Krishika's 21st Birthday
         </button>
 
         <ul className="hidden gap-8 font-body text-sm text-plum/80 md:flex">
