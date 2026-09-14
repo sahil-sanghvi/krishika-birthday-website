@@ -24,10 +24,19 @@ export default {
           '0%, 100%': { transform: 'translateY(0) rotate(var(--rot, 0deg))' },
           '50%': { transform: 'translateY(-6px) rotate(var(--rot, 0deg))' },
         },
+        'balloon-drift': {
+          '0%, 100%': {
+            transform: 'translateY(0) translateX(0) rotate(var(--rot, -4deg))',
+          },
+          '50%': {
+            transform: 'translateY(-22px) translateX(6px) rotate(var(--rot2, 4deg))',
+          },
+        },
       },
       animation: {
         'bounce-slow': 'bounce-slow 2s ease-in-out infinite',
         float: 'float 6s ease-in-out infinite',
+        'balloon-drift': 'balloon-drift 10s ease-in-out infinite',
       },
     },
   },
