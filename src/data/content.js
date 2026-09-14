@@ -6,7 +6,7 @@ export const content = {
     title: 'Happy Birthday, Krishika',
     subtitle:
       'A little collection of memories, people, and moments that make you so loved.',
-    photo: '', // e.g. '/images/hero/main.jpg'
+    photo: '/images/hero/krishika-hero.jpeg',
   },
 
   childhood: {
