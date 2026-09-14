@@ -16,8 +16,8 @@ export default function FamilySection() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {familyMembers.map((member, i) => (
             <Reveal key={member.name} delay={i * 0.1}>
-              <article className="flex h-full flex-col items-center rounded-2xl bg-white/80 p-8 text-center shadow-md ring-1 ring-plum/5">
-                <div className="mb-5 h-24 w-24 overflow-hidden rounded-full ring-4 ring-blush/40">
+              <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white/80 text-center shadow-md ring-1 ring-plum/5">
+                <div className="aspect-square w-full">
                   <PlaceholderImage
                     src={member.image}
                     alt={member.name}
@@ -25,13 +25,15 @@ export default function FamilySection() {
                     className="h-full w-full"
                   />
                 </div>
-                <h3 className="font-display text-xl text-plum">{member.name}</h3>
-                <p className="mb-4 font-body text-xs uppercase tracking-wide text-terracotta">
-                  {member.relationship}
-                </p>
-                <p className="font-body text-sm leading-relaxed text-plum/75">
-                  {member.message}
-                </p>
+                <div className="flex flex-1 flex-col items-center p-6 sm:p-8">
+                  <h3 className="font-display text-xl text-plum">{member.name}</h3>
+                  <p className="mb-4 font-body text-xs uppercase tracking-wide text-terracotta">
+                    {member.relationship}
+                  </p>
+                  <p className="font-body text-sm leading-relaxed text-plum/75">
+                    {member.message}
+                  </p>
+                </div>
               </article>
             </Reveal>
           ))}

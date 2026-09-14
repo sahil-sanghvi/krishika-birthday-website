@@ -118,8 +118,8 @@ export default function FriendCarousel() {
 
 function FriendCard({ friend }) {
   return (
-    <article className="flex h-full flex-col items-center rounded-2xl bg-white p-7 text-center shadow-md ring-1 ring-plum/5">
-      <div className="mb-4 h-20 w-20 overflow-hidden rounded-full ring-4 ring-gold/30">
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white text-center shadow-md ring-1 ring-plum/5">
+      <div className="aspect-square w-full">
         <PlaceholderImage
           src={friend.image}
           alt={friend.name}
@@ -127,15 +127,17 @@ function FriendCard({ friend }) {
           className="h-full w-full"
         />
       </div>
-      <h3 className="font-display text-lg text-plum">{friend.name}</h3>
-      {friend.relationship && (
-        <p className="mb-3 font-body text-[11px] uppercase tracking-wide text-terracotta">
-          {friend.relationship}
+      <div className="flex flex-1 flex-col items-center p-6">
+        <h3 className="font-display text-lg text-plum">{friend.name}</h3>
+        {friend.relationship && (
+          <p className="mb-3 font-body text-[11px] uppercase tracking-wide text-terracotta">
+            {friend.relationship}
+          </p>
+        )}
+        <p className="font-body text-sm italic leading-relaxed text-plum/75">
+          "{friend.message}"
         </p>
-      )}
-      <p className="font-body text-sm italic leading-relaxed text-plum/75">
-        "{friend.message}"
-      </p>
+      </div>
     </article>
   )
 }
