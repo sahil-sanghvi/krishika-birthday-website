@@ -366,4 +366,119 @@ export const memories = [
     caption: 'More before heading out',
     category: 'Friends',
   },
+  {
+    image: '/images/memories/group-kitchen-bar.jpeg',
+    caption: 'Dressed up, kitchen bar backdrop',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-kitchen-bar-2.jpeg',
+    caption: 'More from that evening',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-kitchen-bar-3.jpeg',
+    caption: 'More from that evening',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-kitchen-bar-4.jpeg',
+    caption: 'More from that evening',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-kitchen-bar-5.jpeg',
+    caption: 'More from that evening',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-hats-party.jpeg',
+    caption: 'More from the birthday hat party',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-hats-party-2.jpeg',
+    caption: 'More from the birthday hat party',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-hats-party-3.jpeg',
+    caption: 'More from the birthday hat party',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-lake-day.jpeg',
+    caption: 'More from the lake day',
+    category: 'Trips',
+  },
+  {
+    image: '/images/memories/group-lake-day-2.jpeg',
+    caption: 'More from the lake day',
+    category: 'Trips',
+  },
+  {
+    image: '/images/memories/group-lake-day-3.jpeg',
+    caption: 'More from the lake day',
+    category: 'Trips',
+  },
+  {
+    image: '/images/memories/group-lake-day-4.jpeg',
+    caption: 'More from the lake day',
+    category: 'Trips',
+  },
+  {
+    image: '/images/memories/group-lake-day-5.jpeg',
+    caption: 'More from the lake day',
+    category: 'Trips',
+  },
+  {
+    image: '/images/memories/group-sunny-day.jpeg',
+    caption: 'A sunny day out together',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-2.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-3.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-4.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-5.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-6.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-sunny-day-7.jpeg',
+    caption: 'More from that sunny day',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-pajamas-2.jpeg',
+    caption: 'More pajama silliness',
+    category: 'Funny moments',
+  },
+  {
+    image: '/images/memories/group-pajamas-3.jpeg',
+    caption: 'More pajama silliness',
+    category: 'Funny moments',
+  },
+  {
+    image: '/images/memories/group-pajamas-4.jpeg',
+    caption: 'More pajama silliness',
+    category: 'Funny moments',
+  },
 ]
