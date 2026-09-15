@@ -32,7 +32,7 @@ export default function Lightbox({ index, onClose, slides }) {
               />
             ) : (
               <PlaceholderImage
-                label={slide.title || 'Photo placeholder'}
+                label={slide.alt || 'Photo placeholder'}
                 className="h-[50vh] max-h-[70vh] w-[50vh] max-w-[85vw] rounded-lg"
               />
             )}

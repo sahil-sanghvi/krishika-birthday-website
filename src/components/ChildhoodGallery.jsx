@@ -30,8 +30,8 @@ export default function ChildhoodGallery() {
               <div className="relative overflow-hidden rounded">
                 <PlaceholderImage
                   src={photo.image}
-                  alt={photo.caption}
-                  label={photo.caption}
+                  alt="Childhood photo"
+                  label="[Childhood photo]"
                   fit="natural"
                   imgClassName="transition-transform duration-500 group-hover:scale-105"
                 />
@@ -41,9 +41,6 @@ export default function ChildhoodGallery() {
                   </span>
                 )}
               </div>
-              <figcaption className="mt-2 line-clamp-2 px-1 text-center font-body text-xs text-plum/70">
-                {photo.caption}
-              </figcaption>
             </figure>
           </Reveal>
         ))}

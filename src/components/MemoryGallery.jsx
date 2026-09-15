@@ -10,8 +10,7 @@ export default function MemoryGallery() {
 
   const slides = memories.map((m) => ({
     src: m.image,
-    alt: m.caption,
-    title: m.caption,
+    alt: m.category ? `${m.category} photo` : 'Memory photo',
     description: m.category,
   }))
 
@@ -30,12 +29,12 @@ export default function MemoryGallery() {
             <button
               onClick={() => setActiveIndex(i)}
               className="group block w-full overflow-hidden rounded-lg shadow-sm ring-1 ring-plum/5"
-              aria-label={`Open photo: ${memory.caption}`}
+              aria-label={`Open photo${memory.category ? `: ${memory.category}` : ''}`}
             >
               <PlaceholderImage
                 src={memory.image}
-                alt={memory.caption}
-                label={memory.caption}
+                alt={memory.category ? `${memory.category} photo` : 'Memory photo'}
+                label="[Memory photo]"
                 fit="natural"
                 imgClassName="transition-transform duration-500 group-hover:scale-105"
               />

@@ -3,6 +3,8 @@
 // freely; the collage layout adapts to however many are here.
 export const friends = [
   { name: 'Aaron', image: '/images/friends/aaron.jpeg' },
+  { name: 'Aashna & Avni', image: '/images/friends/aashna-avni.jpeg' },
+  { name: 'Bhavi', image: '/images/friends/bhavi.jpeg' },
   { name: 'Laksanya', image: '/images/friends/laksanya.jpeg' },
   { name: 'Misha', image: '/images/friends/misha.jpeg' },
   { name: 'Shreya', image: '/images/friends/shreya.jpeg' },
