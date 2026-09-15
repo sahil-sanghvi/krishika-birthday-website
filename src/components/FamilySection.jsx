@@ -13,7 +13,7 @@ export default function FamilySection() {
           </h2>
         </Reveal>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-3xl gap-8 sm:grid-cols-2">
           {familyMembers.map((member, i) => (
             <Reveal key={member.name} delay={i * 0.1}>
               <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white/80 text-center shadow-md ring-1 ring-plum/5">
@@ -30,7 +30,7 @@ export default function FamilySection() {
                   <p className="mb-4 font-body text-xs uppercase tracking-wide text-terracotta">
                     {member.relationship}
                   </p>
-                  <p className="font-body text-sm leading-relaxed text-plum/75">
+                  <p className="whitespace-pre-line font-body text-sm leading-relaxed text-plum/75">
                     {member.message}
                   </p>
                 </div>

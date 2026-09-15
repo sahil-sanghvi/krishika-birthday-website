@@ -21,10 +21,7 @@ export const content = {
 
   friends: {
     heading: 'And then there are the people who make life more fun...',
-  },
-
-  collage: {
-    heading: 'The people behind the memories',
+    intro: 'The faces behind most of the chaos, the laughs, and the good memories.',
   },
 
   gallery: {
