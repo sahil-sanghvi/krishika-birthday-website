@@ -6,14 +6,9 @@ import Reveal from './Reveal'
 // A big, dense wall of friend photos rather than a carousel of quotes — no
 // messages here on purpose. Slight rotations echo the childhood gallery's
 // scrapbook feel; hovering straightens the photo and reveals the name.
+// Photos render at their real aspect ratio (fit="natural") — no forced
+// square/portrait crop, so nobody's head gets cut off.
 const ROTATIONS = [-3, 2, -1.5, 3, -2.5, 1.5, -2, 2.5]
-const ASPECTS = [
-  'aspect-square',
-  'aspect-[4/5]',
-  'aspect-[3/4]',
-  'aspect-square',
-  'aspect-[5/4]',
-]
 
 export default function PhotoCollage() {
   return (
@@ -35,15 +30,15 @@ export default function PhotoCollage() {
             className="mb-4 break-inside-avoid sm:mb-5"
           >
             <div
-              className={`group rotate-card relative overflow-hidden rounded-lg bg-white p-1.5 shadow-md transition-transform duration-300 hover:z-10 hover:rotate-0 hover:scale-105 ${ASPECTS[i % ASPECTS.length]}`}
+              className="group rotate-card overflow-hidden rounded-lg bg-white p-1.5 shadow-md transition-transform duration-300 hover:z-10 hover:rotate-0 hover:scale-105"
               style={{ '--rot': `${ROTATIONS[i % ROTATIONS.length]}deg` }}
             >
-              <div className="relative h-full w-full overflow-hidden rounded">
+              <div className="relative overflow-hidden rounded">
                 <PlaceholderImage
                   src={friend.image}
                   alt={friend.name}
                   label={`[${friend.name}'s photo]`}
-                  className="h-full w-full"
+                  fit="natural"
                   imgClassName="transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-plum/80 to-transparent px-3 py-2 font-body text-xs text-cream opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">

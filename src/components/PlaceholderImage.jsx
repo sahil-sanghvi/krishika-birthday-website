@@ -21,6 +21,13 @@ function gradientFor(seed = '') {
  * Renders `src` when it loads successfully; otherwise (or when `src` is
  * empty) falls back to a soft gradient placeholder so a missing photo never
  * breaks the layout.
+ *
+ * `fit`:
+ *  - 'cover' (default) — fills a fixed-size container, cropping to match.
+ *    Use for deliberately-framed spots (hero circle, family square photo).
+ *  - 'natural' — no forced box or crop; the image renders at its own aspect
+ *    ratio at the container's width. Use for photo-wall/masonry layouts so
+ *    real candid photos are never cropped into someone's face.
  */
 export default function PlaceholderImage({
   src,
@@ -28,6 +35,7 @@ export default function PlaceholderImage({
   label,
   className = '',
   imgClassName = '',
+  fit = 'cover',
 }) {
   const [failed, setFailed] = useState(false)
   const showPlaceholder = !src || failed
@@ -37,7 +45,7 @@ export default function PlaceholderImage({
       <div
         className={`flex flex-col items-center justify-center gap-2 bg-gradient-to-br ${gradientFor(
           label || alt,
-        )} text-cream/90 ${className}`}
+        )} text-cream/90 ${fit === 'natural' ? 'aspect-[4/5] w-full' : ''} ${className}`}
         role="img"
         aria-label={label || alt || 'Photo placeholder'}
       >
@@ -48,6 +56,18 @@ export default function PlaceholderImage({
           </span>
         )}
       </div>
+    )
+  }
+
+  if (fit === 'natural') {
+    return (
+      <img
+        src={src}
+        alt={alt}
+        onError={() => setFailed(true)}
+        className={`block h-auto w-full ${className} ${imgClassName}`}
+        loading="lazy"
+      />
     )
   }
 

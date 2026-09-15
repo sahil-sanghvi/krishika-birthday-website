@@ -86,4 +86,19 @@ export const memories = [
     caption: 'Photobombing her own selfie',
     category: 'Funny moments',
   },
+  {
+    image: '/images/memories/friends-manya-group-night-out.jpeg',
+    caption: 'A night out on a pretty street',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/friends-navya-lipgloss.jpeg',
+    caption: 'Matching lip glosses, obviously',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/family-siblings-young.jpeg',
+    caption: 'Vanshika and Advik, a few years back',
+    category: 'Family',
+  },
 ]

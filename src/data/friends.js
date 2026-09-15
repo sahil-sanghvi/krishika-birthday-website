@@ -1,13 +1,11 @@
-// Friend photos for the big collage. No messages here by design — this
-// section is a wall of photos, not quotes. Add/remove entries freely; the
-// collage layout adapts to however many are here.
+// Friend photos for the big collage — one photo per person, no messages by
+// design (this section is a wall of photos, not quotes). Add/remove entries
+// freely; the collage layout adapts to however many are here.
 export const friends = [
   { name: 'Aaron', image: '/images/friends/aaron.jpeg' },
   { name: 'Laksanya', image: '/images/friends/laksanya.jpeg' },
   { name: 'Manya', image: '/images/friends/manya.jpeg' },
-  { name: 'Manya', image: '/images/friends/manya-group.jpeg' },
   { name: 'Navya', image: '/images/friends/navya.jpeg' },
-  { name: 'Navya', image: '/images/friends/navya-lipgloss.jpeg' },
   { name: 'Rishon', image: '/images/friends/rishon.jpeg' },
   { name: 'Sahil', image: '/images/friends/sahil.jpeg' },
   { name: 'Sam', image: '/images/friends/sam.jpeg' },

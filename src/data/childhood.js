@@ -1,40 +1,36 @@
-// Childhood gallery entries. Add/remove/reorder freely — the layout adapts.
-// `image`: path under /public/images/childhood/ (leave empty for a placeholder).
-// `size`: 'large' | 'medium' | 'small' — controls the editorial grid layout.
+// Childhood gallery entries. Add/remove/reorder freely — the masonry layout
+// adapts, and each photo keeps its own natural aspect ratio (no cropping).
+// `image`: path under /public/images/childhood/.
+// `year`: optional — leave blank if unknown, the badge just won't show.
 export const childhoodPhotos = [
   {
-    image: '',
-    year: '2008',
+    image: '/images/childhood/tutu-party.jpeg',
+    year: '',
     caption: 'Little Krishika, already causing trouble ❤️',
-    description: '[Short description of this memory goes here.]',
-    size: 'large',
+    description: '',
   },
   {
-    image: '',
-    year: '2010',
-    caption: '[Caption goes here]',
+    image: '/images/childhood/joy-sticker-frame.jpeg',
+    year: '',
+    caption: 'Already this joyful',
     description: '',
-    size: 'medium',
   },
   {
-    image: '',
-    year: '2011',
-    caption: '[Caption goes here]',
+    image: '/images/childhood/traditional-dress-day.jpeg',
+    year: '',
+    caption: 'Dress-up day at school',
     description: '',
-    size: 'small',
   },
   {
-    image: '',
-    year: '2013',
-    caption: '[Caption goes here]',
+    image: '/images/childhood/playground-climb.jpeg',
+    year: '',
+    caption: 'Always finding something to climb',
     description: '',
-    size: 'small',
   },
   {
-    image: '',
-    year: '2015',
-    caption: '[Caption goes here]',
+    image: '/images/childhood/christmas-lobby.jpeg',
+    year: '',
+    caption: 'Christmas trip, front and center',
     description: '',
-    size: 'medium',
   },
 ]

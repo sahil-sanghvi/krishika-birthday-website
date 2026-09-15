@@ -5,8 +5,6 @@ import PlaceholderImage from './PlaceholderImage'
 import Reveal from './Reveal'
 import Lightbox from './Lightbox'
 
-const ASPECTS = ['aspect-[3/4]', 'aspect-square', 'aspect-[4/5]', 'aspect-[3/5]', 'aspect-[5/4]']
-
 export default function MemoryGallery() {
   const [activeIndex, setActiveIndex] = useState(null)
 
@@ -31,14 +29,14 @@ export default function MemoryGallery() {
           <Reveal key={i} delay={(i % 6) * 0.06} className="mb-4 break-inside-avoid sm:mb-5">
             <button
               onClick={() => setActiveIndex(i)}
-              className={`group block w-full overflow-hidden rounded-lg shadow-sm ring-1 ring-plum/5 ${ASPECTS[i % ASPECTS.length]}`}
+              className="group block w-full overflow-hidden rounded-lg shadow-sm ring-1 ring-plum/5"
               aria-label={`Open photo: ${memory.caption}`}
             >
               <PlaceholderImage
                 src={memory.image}
                 alt={memory.caption}
                 label={memory.caption}
-                className="h-full w-full"
+                fit="natural"
                 imgClassName="transition-transform duration-500 group-hover:scale-105"
               />
             </button>

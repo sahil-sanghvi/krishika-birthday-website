@@ -4,13 +4,9 @@ import PlaceholderImage from './PlaceholderImage'
 import Reveal from './Reveal'
 
 // Deterministic slight rotation per card index, alternating left/right.
+// Photos render at their real aspect ratio (fit="natural") in a masonry
+// layout — no forced square/portrait crop, so nobody's head gets cut off.
 const ROTATIONS = [-2, 1.5, -1, 2.5, -2.5, 1]
-
-const SIZE_CLASSES = {
-  large: 'sm:col-span-2 sm:row-span-2 aspect-[4/5] sm:aspect-square',
-  medium: 'aspect-[4/5]',
-  small: 'aspect-square',
-}
 
 export default function ChildhoodGallery() {
   return (
@@ -24,19 +20,19 @@ export default function ChildhoodGallery() {
         </p>
       </Reveal>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
+      <div className="columns-2 gap-4 sm:columns-3 sm:gap-6">
         {childhoodPhotos.map((photo, i) => (
-          <Reveal key={i} delay={i * 0.08} className={SIZE_CLASSES[photo.size] || 'aspect-square'}>
+          <Reveal key={i} delay={i * 0.08} className="mb-4 break-inside-avoid sm:mb-6">
             <figure
-              className="group h-full w-full rotate-card rounded-lg bg-white p-2.5 pb-8 shadow-lg transition-transform duration-300 hover:z-10 hover:rotate-0 hover:scale-[1.03] sm:pb-10"
+              className="group rotate-card rounded-lg bg-white p-2.5 pb-8 shadow-lg transition-transform duration-300 hover:z-10 hover:rotate-0 hover:scale-[1.03] sm:pb-10"
               style={{ '--rot': `${ROTATIONS[i % ROTATIONS.length]}deg` }}
             >
-              <div className="relative h-full w-full overflow-hidden rounded">
+              <div className="relative overflow-hidden rounded">
                 <PlaceholderImage
                   src={photo.image}
                   alt={photo.caption}
                   label={photo.caption}
-                  className="h-full w-full"
+                  fit="natural"
                   imgClassName="transition-transform duration-500 group-hover:scale-105"
                 />
                 {photo.year && (
