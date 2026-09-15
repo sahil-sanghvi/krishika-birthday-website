@@ -341,4 +341,29 @@ export const memories = [
     caption: 'A golden fall day on campus',
     category: 'Trips',
   },
+  {
+    image: '/images/memories/group-photobooth-strip.jpeg',
+    caption: 'Another photo booth strip',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-halloween-closeup.jpeg',
+    caption: 'Halloween costumes, up close',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-halloween-crew.jpeg',
+    caption: 'The whole Halloween crew',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-mirror-camera.jpeg',
+    caption: 'Mirror selfie, old-school camera',
+    category: 'Friends',
+  },
+  {
+    image: '/images/memories/group-hallway-trio-7.jpeg',
+    caption: 'More before heading out',
+    category: 'Friends',
+  },
 ]
