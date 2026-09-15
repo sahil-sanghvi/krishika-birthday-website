@@ -31,7 +31,6 @@ export const content = {
 
   finalMessage: {
     closing: 'Happy Birthday, Krishika ❤️',
-    photo: '', // e.g. '/images/hero/final.jpg'
   },
 
   // Password-gated surprise. Password is her birthday, DDMMYYYY.
@@ -41,6 +40,6 @@ export const content = {
     revealTitle: 'One last goodbye',
     revealBody:
       "Goodbye Krishika! Good luck living on campus — go be amazing. I'll miss you. 🕷️",
-    photo: '', // e.g. '/images/friends/spider.jpg'
+    photo: '/images/friends/spider.jpg',
   },
 }

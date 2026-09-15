@@ -4,6 +4,7 @@
 export const friends = [
   { name: 'Aaron', image: '/images/friends/aaron.jpeg' },
   { name: 'Laksanya', image: '/images/friends/laksanya.jpeg' },
+  { name: 'Misha', image: '/images/friends/misha.jpeg' },
   { name: 'Manya', image: '/images/friends/manya.jpeg' },
   { name: 'Navya', image: '/images/friends/navya.jpeg' },
   { name: 'Rishon', image: '/images/friends/rishon.jpeg' },

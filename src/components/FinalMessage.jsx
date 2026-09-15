@@ -12,7 +12,7 @@ export default function FinalMessage() {
   const [input, setInput] = useState('')
   const [error, setError] = useState(false)
   const reduced = useReducedMotion()
-  const { closing, photo } = content.finalMessage
+  const { closing } = content.finalMessage
   const surprise = content.surprise
 
   function handleSubmit(e) {
@@ -28,20 +28,11 @@ export default function FinalMessage() {
   return (
     <section id="final" className="bg-gradient-to-b from-cream to-blush/20 px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-2xl text-center">
-        <Reveal className="mx-auto h-64 w-52 overflow-hidden rounded-xl shadow-xl sm:h-80 sm:w-64">
-          <PlaceholderImage
-            src={photo}
-            alt="Krishika"
-            label="[FINAL PHOTO — add a favorite photo of Krishika here]"
-            className="h-full w-full"
-          />
+        <Reveal>
+          <p className="font-display text-3xl text-terracotta sm:text-4xl">{closing}</p>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <p className="mt-10 font-display text-3xl text-terracotta sm:text-4xl">{closing}</p>
-        </Reveal>
-
-        <Reveal delay={0.2} className="mt-16">
+        <Reveal delay={0.1} className="mt-16">
           {stage === 'button' && (
             <button
               onClick={() => setStage('prompt')}

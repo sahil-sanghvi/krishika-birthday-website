@@ -331,4 +331,14 @@ export const memories = [
     caption: 'The whole crew, custom party hats and all',
     category: 'Friends',
   },
+  {
+    image: '/images/memories/group-sleepy-selfie.jpeg',
+    caption: 'Caught her falling asleep',
+    category: 'Funny moments',
+  },
+  {
+    image: '/images/memories/group-campus-fall.jpeg',
+    caption: 'A golden fall day on campus',
+    category: 'Trips',
+  },
 ]
