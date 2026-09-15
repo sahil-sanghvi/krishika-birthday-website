@@ -29,24 +29,18 @@ export const content = {
     intro: 'Her, her people, and all the in-between moments worth keeping.',
   },
 
-  // Write the real, personal closing message here before sending the site.
   finalMessage: {
-    heading: 'One more thing...',
-    // TODO: Replace with a personal, handwritten message before launch.
-    body: `[FINAL MESSAGE — write the real, personal closing message here.
-Something about the years, the laughs, the people she's gathered around her,
-and why today is worth celebrating. This is the emotional payoff of the whole
-site, so take your time with it.]`,
     closing: 'Happy Birthday, Krishika ❤️',
     photo: '', // e.g. '/images/hero/final.jpg'
   },
 
+  // Password-gated surprise. Password is her birthday, DDMMYYYY.
   surprise: {
     buttonLabel: 'One last surprise...',
-    // TODO: Replace with the actual hidden message/photo for the reveal.
-    revealTitle: "You weren't supposed to peek this early 👀",
+    password: '15092005',
+    revealTitle: 'One last goodbye',
     revealBody:
-      '[SURPRISE MESSAGE — a final hidden note, photo, or memory revealed only if she clicks. Make it the softest one yet.]',
-    photo: '', // e.g. '/images/hero/surprise.jpg'
+      "Goodbye Krishika! Good luck living on campus — go be amazing. I'll miss you. 🕷️",
+    photo: '', // e.g. '/images/friends/spider.jpg'
   },
 }
