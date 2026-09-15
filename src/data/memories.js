@@ -47,11 +47,6 @@ export const memories = [
     category: 'Family',
   },
   {
-    image: '/images/memories/group-sunset-dinner.jpeg',
-    caption: 'Golden hour, good company',
-    category: 'Friends',
-  },
-  {
     image: '/images/memories/group-lake-hug.jpeg',
     caption: 'Lake day hugs',
     category: 'Trips',
@@ -213,11 +208,6 @@ export const memories = [
   },
   {
     image: '/images/memories/group-christmas-lights-4.jpeg',
-    caption: 'More magic under the lights',
-    category: 'Trips',
-  },
-  {
-    image: '/images/memories/group-christmas-lights-5.jpeg',
     caption: 'More magic under the lights',
     category: 'Trips',
   },
